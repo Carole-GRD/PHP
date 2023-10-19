@@ -43,7 +43,10 @@
             // require 'exos/exo_9.php'; 
             // echo "<br>";
 
-            require 'exos/exo_10.php'; 
+            // require 'exos/exo_10.php'; 
+            // echo "<br>";
+
+            require 'exos/exo_11.1.php'; 
             echo "<br>";
         ?>
     </body>
