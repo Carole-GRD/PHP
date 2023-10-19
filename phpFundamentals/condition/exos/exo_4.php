@@ -3,7 +3,7 @@
 
 
 <?php 
-    echo'3. "Different greetings according to age" Exercise';
+    echo'4. Display a different greeting according to the user\'s age and gender.';
     echo "<br><br>";
 
     if ((isset($_GET['age'])) AND (isset($_GET['gender']))) {
