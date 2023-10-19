@@ -16,11 +16,11 @@
         echo "Yuk, Room is Disgusting! Let's clean it up !";
     } else if( $room_filthiness == "dirty" ){
         echo "Yuk, Room is dirty : let's clean it up !";
-        // ...
     } else if( $room_filthiness == "filthy" ){
         echo "Yuk, Room is filthy : let's clean it up !";
-        // ...
     } else {
-        echo "<br>Nothing to do, room is neat.";
+        echo "Nothing to do, room is neat.";
     }
+
+    echo "<br><br>";
 ?>

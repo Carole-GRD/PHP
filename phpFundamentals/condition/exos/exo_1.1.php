@@ -16,6 +16,8 @@
     } else {
         echo "<br>Nothing to do, room is neat.";
     } 
+
+    echo "<br><br>";
 ?>
 
 

@@ -14,13 +14,16 @@
         ?>
         <?php 
             require 'exos/exo_1.1.php';
-            echo "<br><br><br>";
+            echo "<br>";
 
             require 'exos/exo_1.2.php';
-            echo "<br><br><br>";
+            echo "<br>";
 
             require 'exos/exo_2.php'; 
-            echo "<br><br><br>";
+            echo "<br><br>";
+
+            require 'exos/exo_3.php'; 
+            echo "<br>";
         ?>
     </body>
 </html>
