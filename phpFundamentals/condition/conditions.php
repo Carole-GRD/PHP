@@ -24,6 +24,9 @@
 
             require 'exos/exo_3.php'; 
             echo "<br>";
+
+            require 'exos/exo_4.php'; 
+            echo "<br>";
         ?>
     </body>
 </html>
