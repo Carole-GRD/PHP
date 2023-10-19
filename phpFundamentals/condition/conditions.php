@@ -40,7 +40,10 @@
             // require 'exos/exo_8.php'; 
             // echo "<br>";
 
-            require 'exos/exo_9.php'; 
+            // require 'exos/exo_9.php'; 
+            // echo "<br>";
+
+            require 'exos/exo_10.php'; 
             echo "<br>";
         ?>
     </body>
