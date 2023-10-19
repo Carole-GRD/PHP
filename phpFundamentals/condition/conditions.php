@@ -13,22 +13,25 @@
             */  
         ?>
         <?php 
-            require 'exos/exo_1.1.php';
-            echo "<br>";
+            // require 'exos/exo_1.1.php';
+            // echo "<br>";
 
-            require 'exos/exo_1.2.php';
-            echo "<br>";
+            // require 'exos/exo_1.2.php';
+            // echo "<br>";
 
-            require 'exos/exo_2.php'; 
-            echo "<br><br>";
+            // require 'exos/exo_2.php'; 
+            // echo "<br><br>";
 
-            require 'exos/exo_3.php'; 
-            echo "<br>";
+            // require 'exos/exo_3.php'; 
+            // echo "<br>";
 
-            require 'exos/exo_4.php'; 
-            echo "<br>";
+            // require 'exos/exo_4.php'; 
+            // echo "<br>";
 
-            require 'exos/exo_5.php'; 
+            // require 'exos/exo_5.php'; 
+            // echo "<br>";
+
+            require 'exos/exo_6.php'; 
             echo "<br>";
         ?>
     </body>
