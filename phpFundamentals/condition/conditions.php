@@ -12,8 +12,15 @@
                 * Series of exercises on PHP conditional structures.
             */  
         ?>
-        <?php // require 'exos/exo_1.1.php'; ?>
-        <?php // require 'exos/exo_1.2.php'; ?>
-        <?php require 'exos/exo_2.php'; ?>
+        <?php 
+            require 'exos/exo_1.1.php';
+            echo "<br><br><br>";
+
+            require 'exos/exo_1.2.php';
+            echo "<br><br><br>";
+
+            require 'exos/exo_2.php'; 
+            echo "<br><br><br>";
+        ?>
     </body>
 </html>
