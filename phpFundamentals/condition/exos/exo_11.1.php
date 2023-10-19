@@ -9,7 +9,7 @@
     // change the variable : $gender = 'M' OR 'F';
     $gender = 'F';
     
-    echo $hello = $gender == 'M' ? 'Hello Mister !' : 'Hello Miss !' ;
+    echo $hello = ($gender == 'M') ? 'Hello Mister !' : 'Hello Miss !' ;
     
     echo "<br><br>";
 
