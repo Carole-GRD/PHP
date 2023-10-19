@@ -12,9 +12,9 @@
         $gender = $_GET['gender'];
         $age = $_GET['age'];
 
-        $display = 'Sorry you don\'t fit the criteria, ' . $name . '.';
-        if ( ($gender === 'woman') AND (($age > 20) AND ($age <= 40)) ) $display = 'Welcome to the team ' . $name . ' !';
-        echo $display;
+        $message = 'Sorry you don\'t fit the criteria, ' . $name . '.';
+        if ( ($gender === 'woman') AND (($age > 20) AND ($age <= 40)) ) $message = 'Welcome to the team ' . $name . ' !';
+        echo $message;
     }
 
     echo "<br><br>";

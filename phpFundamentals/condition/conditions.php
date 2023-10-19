@@ -31,10 +31,13 @@
             // require 'exos/exo_5.php'; 
             // echo "<br>";
 
-            // require 'exos/exo_6.php'; 
+            //require 'exos/exo_6.php'; 
+            //echo "<br>";
+
+            // require 'exos/exo_7.php'; 
             // echo "<br>";
 
-            require 'exos/exo_7.php'; 
+            require 'exos/exo_8.php'; 
             echo "<br>";
         ?>
     </body>
