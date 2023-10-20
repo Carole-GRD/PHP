@@ -1,0 +1,83 @@
+
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+div#excuse-notes-generator {
+
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #87CEEB;
+    border-radius: 10px;
+    
+    h2 {
+        text-align: center;
+        // color: #98FB98;
+        // color: #006400; 
+        // color: #FF4500; 
+        // color: #000080;
+        color: #000000ae;
+        font-size: 24px; 
+        font-weight: bold; 
+    }
+
+    form {
+
+        margin-top: 20px;
+        
+        & > div {
+            margin-bottom: 20px;
+            label {
+                color: #000000;
+            }
+            
+            .label-group {
+                line-height: 2rem;
+
+            }
+
+            input[type="text"], input[type="date"] {
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #D3D3D3;
+                border-radius: 5px;
+            }
+            
+            input[type="radio"] {
+                margin-right: 5px;
+                margin-left: 25px;
+            }
+
+        }
+                    
+        input[type="submit"] {
+            background-color: #FFFF99;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #FFFF66;
+        }
+    }    
+        
+    #excuse-message {
+        margin-top: 20px;
+        color: #000000;
+    }
+            
+}

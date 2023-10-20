@@ -1,0 +1,62 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+div#excuse-notes-generator {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #87CEEB;
+  border-radius: 10px;
+}
+div#excuse-notes-generator h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6823529412);
+  font-size: 24px;
+  font-weight: bold;
+}
+div#excuse-notes-generator form {
+  margin-top: 20px;
+}
+div#excuse-notes-generator form > div {
+  margin-bottom: 20px;
+}
+div#excuse-notes-generator form > div label {
+  color: #000000;
+}
+div#excuse-notes-generator form > div .label-group {
+  line-height: 2rem;
+}
+div#excuse-notes-generator form > div input[type=text], div#excuse-notes-generator form > div input[type=date] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+div#excuse-notes-generator form > div input[type=radio] {
+  margin-right: 5px;
+  margin-left: 25px;
+}
+div#excuse-notes-generator form input[type=submit] {
+  background-color: #FFFF99;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+div#excuse-notes-generator form input[type=submit]:hover {
+  background-color: #FFFF66;
+}
+div#excuse-notes-generator #excuse-message {
+  margin-top: 20px;
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */
