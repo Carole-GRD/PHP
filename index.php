@@ -10,4 +10,6 @@
 
 <?php // require 'phpFundamentals/condition/conditions.php'; ?>
 
-<?php require 'phpFundamentals/challenge/excuse.php'; ?>
+<?php // require 'phpFundamentals/challenge/excuse.php'; ?>
+
+<?php require 'phpFundamentals/array/array.php'; ?>
