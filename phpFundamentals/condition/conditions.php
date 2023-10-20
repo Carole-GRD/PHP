@@ -49,7 +49,10 @@
             // require 'exos/exo_11.1.php'; 
             // echo "<br>";
 
-            require 'exos/exo_11.2.php'; 
+            // require 'exos/exo_11.2.php'; 
+            // echo "<br>";
+
+            require 'exos/exo_11.2_version2.php'; 
             echo "<br>";
         ?>
     </body>

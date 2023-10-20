@@ -8,4 +8,6 @@
 
 <?php // require 'phpFundamentals/variable/humans.php'; ?>
 
-<?php require 'phpFundamentals/condition/conditions.php'; ?>
+<?php // require 'phpFundamentals/condition/conditions.php'; ?>
+
+<?php require 'phpFundamentals/challenge/excuse.php'; ?>
