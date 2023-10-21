@@ -143,10 +143,94 @@
 
 
     // Create a new array from 2 others (or more)
+    $soulmate = Array
+    (
+        'firstname' => 'Geoffrey',
+        'lastname' => 'Gillet',
+        'age' => 47,
+        'favoriteSeason' => 'summer',
+        'likeSoccer' => false,
+        'favorite_movies' => Array
+            (
+                1 => 'Matrix',
+                0 => 'Harry Potter',
+                2 => 'Gimini Man',
+                3 => 'Divergente',
+            ),
     
+        'hobbies' => Array
+            (
+                0 => 'chess',
+                1 => 'volley',
+                2 => 'running'
+            ),
+    
+        'mother' => Array
+            (
+                'firstname' => 'Anne-Marie',
+                'lastname' => 'Goffaux',
+                'age' => 65,
+                'favoriteSeason' => 'spring',
+                'likeSoccer' => false,
+                'favorite_movies' => Array
+                    (
+                        0 => 'Top Chef',
+                        1 => 'Pretty Woman',
+                        2 => 'Thelma et Louise',
+                        3 => 'Titanic'
+                    ),
+    
+                'hobbies' => Array
+                    (
+                        0 => 'cook',
+                        1 => 'candy crush'
+                    )
+            )
+    );
+    echo '<pre>';
+    print_r($soulmate);
+    echo '</pre>';
+
+    // intersection entre deux tableaux
+    $possible_hobbies_via_intersection = array_intersect($me['hobbies'],$soulmate['hobbies']);
+    echo '<pre>';
+    print_r($possible_hobbies_via_intersection);
+    echo '</pre>';
+    echo '<br>';
+
+    // fusion de deux tableaux
+    $possible_hobbies_via_merge = array_merge($me['hobbies'],$soulmate['hobbies']);
+    echo '<pre>';
+    print_r($possible_hobbies_via_merge);
+    echo '</pre>';
+    echo '<br><br>';
+
 
 
     // More array exercises
+    $web_development = array(
+        'frontend' => [],
+        'backend' => []
+    );
+    $web_development['frontend'][] = 'xhtml';
+    $web_development['backend'][] = 'Ruby on Rails';
+    $web_development['frontend'][] = 'css';
+    $web_development['frontend'][] = 'Flash';
+    $web_development['frontend'][] = 'JavaScript';
+    $web_development['backend'][] = 'JavaScript';
+    echo 'index de \'xhtml\' : ' . array_search("xhtml", $web_development['frontend']); // index = 0
+    $web_development['frontend'][0] = 'html';
+    echo '<pre>';
+    print_r($web_development);
+    echo '</pre>';
+    echo '<br><br>';
+
+    echo 'index de \'Flash\' : ' . array_search("Flash", $web_development['frontend']); // index = 2
+    array_splice($web_development['frontend'], 2, 1) ;
+    echo '<pre>';
+    print_r($web_development);
+    echo '</pre>';
+    echo '<br><br>';
 
 
 ?>
