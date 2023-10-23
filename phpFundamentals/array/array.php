@@ -5,7 +5,7 @@
     <body>
         <?php
             /**
-                * Series of exercises on PHP conditional structures.
+                * Series of exercises on PHP - array.
             */  
         ?>
         <?php 
