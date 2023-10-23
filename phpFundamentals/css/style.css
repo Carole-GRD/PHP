@@ -59,4 +59,26 @@ div#excuse-notes-generator form input[type=submit]:hover {
 div#excuse-notes-generator #excuse-message {
   margin-top: 20px;
   color: #000000;
+}
+
+.error {
+  background-color: crimson;
+  color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+}
+
+.warning {
+  background-color: #FFFF66;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+}
+
+.info {
+  background-color: lightgreen;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
 }/*# sourceMappingURL=style.css.map */

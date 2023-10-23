@@ -14,4 +14,6 @@
 
 <?php // require 'phpFundamentals/array/array.php'; ?>
 
-<?php require 'phpFundamentals/boucles/boucles.php'; ?>
+<?php // require 'phpFundamentals/boucles/boucles.php'; ?>
+
+<?php require 'phpFundamentals/functions/functions.php'; ?>
