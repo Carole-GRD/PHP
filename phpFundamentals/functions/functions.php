@@ -162,6 +162,21 @@
 
             echo '<br><br>';
 
+            // VERSION 2
+            function acronym_2($string)
+            {
+                $acronym = '';
+                $words = explode(' ', $string);
+                foreach ($words as $word)
+                {
+                    $acronym .= ucfirst($word[0]);
+                }
+                return $acronym;
+            }
+            echo acronym_2('In code we trust!');
+
+            echo '<br><br>';
+
 
             // ------------------------------------------------
 
@@ -196,6 +211,16 @@
             echo replace('microsphaera');
             echo '<br>';
             echo replace('sphaerotheca');
+
+            echo '<br><br>';
+            
+
+            // VERSION 2
+            function makeAE($string)
+            {
+            return str_replace('ae','æ', $string);
+            }
+            echo makeAE('caecotrophie');
 
             echo '<br><br>';
 
@@ -236,6 +261,16 @@
             echo '<br><br>';
 
 
+            // VERSION 2
+            function unMakeAE($string)
+            {
+                return str_replace('æ','ae', $string);
+            }
+            echo unMakeAE('cæcotrophie');
+
+            echo '<br><br>';
+
+
             // ------------------------------------------------
 
             // EXO 9
@@ -245,7 +280,9 @@
             echo '<br>';
 
             function feedback($message, $class) {
-                return '<div class="' . $class . '">' . $message . '</div>';
+                // return '<div class="' . $class . '">' . $message . '</div>';
+                return "<div class='$class'>$message</div>";
+
             }
             echo feedback("Incorrect email address", "error");
             echo feedback("Incomplete email address", "warning");
@@ -323,6 +360,34 @@
 
             echo '<br><br>';
 
+
+            // VERSION 2
+            echo "<h2>Generate a new word</h2>";
+
+            if (isset($_POST['generateWord'])) {  
+                
+                function generateWord($min, $max)
+                {
+                    $characters = 'abcdefghijklmnopqrstuvwxyz';
+                    $finalWord = '';
+                    $lenght = random_int($min, $max);
+                    for ($i = 0; $i < $lenght; $i++)
+                    {
+                        $finalWord .= $characters[random_int(0, strlen($characters) - 1)];
+                    }
+                    return $finalWord;
+                }
+
+                $word1 = generateWord(1, 5);
+                $word2 = generateWord(7, 15);
+                echo $words = '<p>' . $word1 . ' - ' . $word2 . '</p>';
+
+            }
+            
+            echo '<form method="post"><input type="submit" name="generateWord" value="Générer"></form>';
+            
+
+            echo '<br><br>';
 
             // ------------------------------------------------
 
