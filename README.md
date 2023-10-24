@@ -26,3 +26,20 @@ Start server : php -S localhost:8000
         "PS C:\Users\gerar\OneDrive\2022 Documents\BeCode\PHP\phpFundamentals\variable>"
 
  -> dans le navigateur : http://localhost:8000/phpFundamentals/variale
+
+
+# Afficher les erreurs dans la console
+
+[php-error-logging](https://www.cloudways.com/blog/php-error-logging/#enable-errorlog)
+
+```
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+```
+ou bien ...
+
+```
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+```
