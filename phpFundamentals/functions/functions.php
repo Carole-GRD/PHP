@@ -262,7 +262,14 @@
             echo '---------------------------';
             echo '<br>';
 
-            
+            function feedback_2($message, $class = 'info') {
+                return '<div class="' . $class . '">' . $message . '</div>';
+            }
+            echo feedback_2('Correct email address', 'info');
+            echo feedback_2('Incorrect email address', 'error');
+            echo feedback_2('default class : "info"');
+            echo feedback_2('Incomplete email address', 'warning');
+            echo feedback_2('default class : "info"');
 
             echo '<br><br>';
 
@@ -275,7 +282,44 @@
             echo '---------------------------';
             echo '<br>';
 
-            
+
+            echo $title = '<h2>Générer un nouveau mot</h2>';
+
+            if (isset($_POST['wordsGenerator'])) {   
+
+    
+                function wordsGenerator() {
+
+                    // crée une variable avec toutes les lettres de l'alphabet
+                    $alphabet_str = 'abcdefghijklmnopqrstuvwxyz';
+
+                    // Crée un nombre aléatoire pour le nombre de lettres de chaque mot
+                    $numberLettersForLongWords = rand(7, 15);
+                    $numberLettersForShortWords = rand(1, 5);
+
+                    // mélange les lettres de l'alphabet
+                    $alphabet_shuffle_long = str_shuffle($alphabet_str);
+                    $alphabet_shuffle_short = str_shuffle($alphabet_str);
+
+                    // crée un tableau de lettres
+                    $longWordLetters = str_split( $alphabet_shuffle_long);
+                    $shortWordLetters = str_split($alphabet_shuffle_short);
+
+                    // coupe le tableau avec le nombre aléatoire de lettres 
+                    array_splice($longWordLetters, $numberLettersForLongWords);
+                    array_splice($shortWordLetters, $numberLettersForShortWords);
+
+                    // forme un mot avec les lettres du tableau
+                    $longWord = implode('', $longWordLetters);
+                    $shortWord = implode('', $shortWordLetters);
+
+                
+                    return $words = '<p>' . $shortWord . ' - ' . $longWord . '</p>';
+                }
+                echo wordsGenerator();
+            }
+            echo $button = '<form method="post"><input type="submit" name="wordsGenerator" value="Générer"></form>';
+
 
             echo '<br><br>';
 
@@ -288,7 +332,12 @@
             echo '---------------------------';
             echo '<br>';
 
-            
+            $uppercase_str = 'STOP YELLING I CAN\'T HEAR MYSELF THINKING!';
+
+            function decapitalize($sentence) {
+                return ucfirst(strtolower($sentence));
+            }
+            echo decapitalize($uppercase_str);
 
             echo '<br><br>';
 
@@ -301,26 +350,17 @@
             echo '---------------------------';
             echo '<br>';
 
-            
+            function calculate_cone_volume($ray, $height) {
+                // Volume of a cone which ray is "$ray" and height is $height
+                $volume = $ray * $ray * 3.14 * $height * (1/3);  
+                echo 'The volume of a cone which ray is ' . $ray . ' and height is ' . $height .  ' = ' . $volume . ' cm<sup>3</sup><br />';  
+
+            }
+            calculate_cone_volume(5, 2);
+            calculate_cone_volume(3, 4);
+            calculate_cone_volume(10, 6);
 
             echo '<br><br>';
-
-
-            // ------------------------------------------------
-
-            // EXO 14
-            echo 'EXO 14';
-            echo '<br>';
-            echo '---------------------------';
-            echo '<br>';
-
-            
-
-            echo '<br><br>';
-
-
-            // ------------------------------------------------
-
 
         ?>
     </body>

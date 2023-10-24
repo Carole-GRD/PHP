@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #FFFFFF;
   color: #000000;
+  padding: 50px;
 }
 
 div#excuse-notes-generator {
