@@ -40,9 +40,9 @@ $errors = array();
 $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 </pre>
 
-See the doc (filter_var) :
+[See the doc : filter_var](https://www.php.net/manual/en/filter.filters.sanitize.php) 
 
-https://www.php.net/manual/en/filter.filters.sanitize.php
+
 
 2. Validation
 <pre>

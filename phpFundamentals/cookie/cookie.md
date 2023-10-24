@@ -2,7 +2,7 @@
 
 ## Setting a cookie
 
-https://www.php.net/setcookie
+[setcookie()](https://www.php.net/setcookie)
 
 
  - **name**: The name of the cookie. You can store cookies as an array by adding square brackets to the end of the name.
@@ -28,7 +28,7 @@ value1value2
 
 - **expire (optional)**: default = 0
 
-https://www.php.net/manual/en/function.time.php
+[time()](https://www.php.net/manual/en/function.time.php)
 
 Set the cookie to expire in 30 days. 
 
@@ -80,6 +80,6 @@ setcookie($_GET['delete'], "", time() - 3600, '/');
 
 ## ⚠️ Cookie vulnerability : CSRF
 
-Learn more about Cross Site Request Forgery (CSRF) :
+Learn more about [Cross Site Request Forgery (CSRF)](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
 
-https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
