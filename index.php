@@ -16,6 +16,6 @@
 
 <?php // require 'phpFundamentals/boucles/boucles.php'; ?>
 
-<?php // require 'phpFundamentals/functions/functions.php'; ?>
+<?php require 'phpFundamentals/functions/functions.php'; ?>
 
-<?php require 'phpFundamentals/form/form.php'; ?>
+<?php // require 'phpFundamentals/form/form.php'; ?>
